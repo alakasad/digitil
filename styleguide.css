@@ -1,0 +1,51 @@
+:root {
+  --alt-text-font-family: "TenorSans-Regular", Helvetica;
+  --alt-text-font-weight: 400;
+  --alt-text-font-size: 14px;
+  --alt-text-letter-spacing: -0.28px;
+  --alt-text-line-height: 110.00000238418579%;
+  --alt-text-font-style: normal;
+  --colors-green: rgba(230, 255, 158, 1);
+  --colors-brown: rgba(40, 30, 17, 1);
+  --colors-gray: rgba(159, 159, 159, 1);
+  --colors-green-dark: rgba(91, 121, 80, 1);
+  --colors-white: rgba(255, 255, 255, 1);
+  --tokens-text-text-primary: var(--colors-brown);
+  --tokens-text-text-hover: var(--colors-green-dark);
+  --tokens-surface-primary: var(--colors-white);
+  --tokens-surface-hover: var(--colors-gray);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-colors-mode="mode-1">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-colors-mode="mode-1"] {
+  --colors-green: rgba(230, 255, 158, 1);
+  --colors-brown: rgba(40, 30, 17, 1);
+}
+
+[data-colors-mode="dark"] {
+  --colors-green: var(--tokens-text-text-primary);
+  --colors-brown: var(--colors-green-dark);
+}
+
+[data-tokens-mode="mode-1"] {
+  --tokens-text-text-hover: var(--colors-green-dark);
+  --tokens-surface-primary: var(--colors-white);
+  --tokens-surface-hover: var(--colors-gray);
+}
+
+[data-tokens-mode="test"] {
+  --tokens-text-text-hover: var(--tokens-text-text-primary);
+  --tokens-surface-primary: var(--colors-green);
+  --tokens-surface-hover: var(--colors-green);
+}

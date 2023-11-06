@@ -1,0 +1,249 @@
+.element-b {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 125px 0px;
+  position: relative;
+  background-color: var(--colors-green);
+}
+
+.element-b .footer {
+  display: flex;
+  width: 925px;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: transparent;
+}
+
+.element-b .svg {
+  position: relative;
+  width: 325.96px;
+  height: 55px;
+}
+
+.element-b .controls {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.main-page-TTS.working-area .big-textbox {
+  display: flex;
+  width: 925px;
+  height: 337.5px;
+  align-items: flex-start;
+  gap: 62.5px;
+  padding: 62.5px;
+  position: relative;
+  background-color: var(--colors-white);
+  border-radius: 50px;
+}
+
+
+.element-b .image {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  object-fit: cover;
+}
+
+.element-b .img {
+  width: 35px;
+  height: 32px;
+  position: relative;
+  object-fit: cover;
+}
+
+.element-b .frame {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-b .line {
+  display: flex;
+  width: 925px;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-b .line-2 {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  height: 3.12px;
+  margin-top: -3.12px;
+}
+
+.element-b .buttons {
+  border: 0.62px solid;
+  border-color: var(--colors-white);
+  display: flex;
+  width: 925px;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-b .button {
+  width: 231.25px;
+  background-color: var(--colors-white);
+  border-color: var(--colors-brown);
+  position: relative;
+  height: 37.5px;
+  margin-top: -3.12px;
+  margin-bottom: -3.12px;
+  border-radius: 18.75px;
+  overflow: hidden;
+  border: 3.12px solid;
+}
+
+.element-b .text-wrapper {
+  left: 19px;
+  color: var(--colors-brown);
+  position: absolute;
+  top: 6px;
+  font-family: "Inter", Helvetica;
+  font-weight: 900;
+  font-size: 18.8px;
+  text-align: center;
+  letter-spacing: 1.88px;
+  line-height: 18.8px;
+  white-space: nowrap;
+}
+
+.element-b .STT-wrapper {
+  width: 231.25px;
+  border-color: var(--colors-brown);
+  position: relative;
+  height: 37.5px;
+  margin-top: -3.12px;
+  margin-bottom: -3.12px;
+  border-radius: 18.75px;
+  overflow: hidden;
+  border: 3.12px solid;
+}
+
+.element-b .about-wrapper {
+  width: 193.75px;
+  border-color: var(--colors-brown);
+  position: relative;
+  height: 37.5px;
+  margin-top: -3.12px;
+  margin-bottom: -3.12px;
+  border-radius: 18.75px;
+  overflow: hidden;
+  border: 3.12px solid;
+}
+
+.element-b .about {
+  position: absolute;
+  top: 6px;
+  left: 56px;
+  font-family: "Inter", Helvetica;
+  font-weight: 900;
+  color: var(--colors-brown);
+  font-size: 18.8px;
+  text-align: center;
+  letter-spacing: 1.88px;
+  line-height: 18.8px;
+  white-space: nowrap;
+}
+
+.element-b .line-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-b .line-3 {
+  position: relative;
+  width: 718.75px;
+  height: 3.12px;
+  margin-top: -3.12px;
+}
+
+.element-b .working-area {
+    /*text box*/
+
+}
+
+.element-b .flexcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 760.62px;
+  height: 256.25px;
+  align-items: flex-start;
+  gap: 6.25px;
+}
+
+.element-b .text {
+  position: relative;
+  align-self: stretch;
+  filter: blur(1.88px);
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: var(--colors-brown);
+  font-size: 25px;
+  letter-spacing: -0.5px;
+  line-height: 27.5px;
+}
+
+.element-b .span {
+  color: #281e11;
+}
+
+.element-b .text-wrapper-2 {
+  color: #5b7950;
+}
+
+.element-b .button-wrapper {
+  display: flex;
+  width: 925px;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-b .TTS-wrapper {
+  width: 306.25px;
+  border-color: var(--colors-gray);
+  position: relative;
+  height: 37.5px;
+  margin-top: -3.12px;
+  margin-bottom: -3.12px;
+  border-radius: 18.75px;
+  overflow: hidden;
+  border: 3.12px solid;
+}
+
+.element-b .TTS {
+  left: 32px;
+  color: var(--colors-gray);
+  position: absolute;
+  top: 6px;
+  font-family: "Inter", Helvetica;
+  font-weight: 900;
+  font-size: 18.8px;
+  text-align: center;
+  letter-spacing: 1.88px;
+  line-height: 18.8px;
+  white-space: nowrap;
+}
