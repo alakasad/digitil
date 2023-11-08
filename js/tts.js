@@ -13,16 +13,16 @@
 
     let voice = DEFAULT_VOICE;
 
-    // select a voice
-    if (lang.value === 'uz') {
-        voice = 'sevinch' // change to 'dilnavoz' if needed
-    } else if (lang.value === 'en') {
-        voice = 'slt'
-    } else if (lang.value === 'en') {
-        voice = 'aleksandr'
-    }
-
     playButton.onclick = () => {
+        // select a voice
+        if (lang.value === 'uz') {
+            voice = 'sevinch' // change to 'dilnavoz' if needed
+        } else if (lang.value === 'en') {
+            voice = 'slt'
+        } else if (lang.value === 'ru') {
+            voice = 'aleksandr'
+        }
+
         let params = {voice: voice, text: text.value}
         let url = API_URL + new URLSearchParams(params)
 
