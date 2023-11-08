@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="element-b">
-      <footer class="footer">
-        <img class="svg" src="img/svg.svg" />
-        <div class="controls"><img class="image" src="img/image.png" /> <img class="img" src="img/image-1.png" /></div>
-        <a href="" id="instagram-button"  class="image-button">
-            <img src="img/button-instagram.svg" /> 
-          </a>
-          <a href="" id="telegram-button"  class="image-button">
-              <img src="img/button-telegram.svg" /> 
-          </a>
-          <a href="" id="facebook-button"  class="image-button">
-              <img src="img/button-facebook.svg" /> 
-          </a>
-      </footer>
-      <div class="line"><img class="line-2" src="img/line-1.svg" /></div>
-        
-        
-      <div class="buttons">
-          <a href="main-page-tts.html" id=""  class="image-button">
-              <img src="Img/button-text-to-speech.svg" alt="Button">
-          </a> 
-          <a href="" id=""  class="image-button">
-              <img src="Img/button-speech-to-text.svg" alt="Button">
-          </a> 
-          <a href="" id=""  class="image-button">
-              <img src="Img/button-about.svg" alt="Button">
-          </a>   
-      </div>
- 
-      <div class="line-wrapper"><img class="line-3" src="img/line.svg" /></div>
-
-      <div>
-          <div class="main-page-TTS working-area">
-              <textarea id="text-to-speak" class="big-textbox" placeholder="Type/paste any text in uzbek"></textarea>
-          </div>    
-      </div>
-        
-      <a href="tts-page.html" id="speak-button"  class="image-button">
-          <img src="Img/buttons-convert-to-speech.svg" alt="Button">
+<head>
+    <link rel="stylesheet" href="globals.css"/>
+    <link rel="stylesheet" href="styleguide.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="element-b">
+    <footer class="footer">
+        <img class="svg" src="img/svg.svg"/>
+        <div class="controls"><img class="image" src="img/image.png"/> <img class="img"
+                                                                            src="img/image-1.png"/>
+        </div>
+        <a href="" id="instagram-button" class="image-button">
+            <img src="img/button-instagram.svg"/>
         </a>
-        
-     
+        <a href="" id="telegram-button" class="image-button">
+            <img src="img/button-telegram.svg"/>
+        </a>
+        <a href="" id="facebook-button" class="image-button">
+            <img src="img/button-facebook.svg"/>
+        </a>
+    </footer>
+    <div class="line"><img class="line-2" src="img/line-1.svg"/></div>
+
+
+    <div class="buttons">
+        <a href="main-page-tts.html" id="" class="image-button">
+            <img src="Img/button-text-to-speech.svg" alt="Button">
+        </a>
+        <a href="" id="" class="image-button">
+            <img src="Img/button-speech-to-text.svg" alt="Button">
+        </a>
+        <a href="" id="" class="image-button">
+            <img src="Img/button-about.svg" alt="Button">
+        </a>
+    </div>
+
+    <div class="line-wrapper"><img class="line-3" src="img/line.svg"/></div>
+
+    <select id="voice-lang">
+        <option value="uz">UZ</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+    </select>
+
+    <div>
+        <div class="main-page-TTS working-area">
+            <textarea id="text-to-speak" class="big-textbox"
+                      placeholder="Type/paste any text in uzbek"></textarea>
+        </div>
+    </div>
+
+    <button id="play">Listen</button>
+
+    <a href="tts-page.html" id="speak-button" class="image-button">
+        <img src="Img/buttons-convert-to-speech.svg" alt="Button">
+    </a>
+
+    <script src="js/tts.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
