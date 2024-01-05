@@ -8,22 +8,19 @@
   position: relative;
   background-color: var(--colors-green);
 }
+html, body{
+    background-color: var(--colors-green);
+}
 
 .element-b .footer {
   display: flex;
   width: 925px;
   align-items: center;
   justify-content: center;
-  gap: 125px;
+  gap: 100px;
   position: relative;
   flex: 0 0 auto;
   background-color: transparent;
-}
-
-.element-b .svg {
-  position: relative;
-  width: 325.96px;
-  height: 55px;
 }
 
 .element-b .controls {
@@ -86,8 +83,6 @@
 }
 
 .element-b .buttons {
-  border: 0.62px solid;
-  border-color: var(--colors-white);
   display: flex;
   width: 925px;
   align-items: center;
@@ -246,4 +241,150 @@
   letter-spacing: 1.88px;
   line-height: 18.8px;
   white-space: nowrap;
+}
+.image-button {
+    margin-right: 1px; /* Adjust the margin as needed */
+    margin-left: 1px;
+}
+.image-button:last-child {
+    margin-right: 0;
+}
+/* Initially grayscale the images */
+.image-button img {
+    filter: grayscale(100%);
+    transition: filter 0.3s; /* Smooth transition effect */
+}
+
+/* Remove grayscale on hover */
+.image-button:hover img {
+    filter: none;
+}
+
+.big-textbox::placeholder {
+    font-size: 20px; 
+}
+.big-textbox {
+    height: 200px;
+    font-size: 20px;
+}
+#play {
+
+}
+
+#link-tts {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7.08px;
+    padding: 10px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #000000; /* Set border color to black */
+    /*background-color: #000000;*/ /* Set background color to black */
+    background-color: white;
+    color: #000000; /* Set text color to black */
+    font-family: "Inter", Helvetica;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+
+/* You can add hover effects for the button */
+#link-tts:hover {
+  /*background-color: #ffffff;*/
+  background-color: var(--colors-green);
+
+}
+#link-speech-to-text{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7.08px;
+    padding: 10px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #000000; /* Set border color to black */
+    /*background-color: #000000;*/ /* Set background color to black */
+    background-color: var(--colors-green);
+    color: #000000; /* Set text color to black */
+    font-family: "Inter", Helvetica;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+
+/* You can add hover effects for the button */
+#link-speech-to-text:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+#link-about{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7.08px;
+    padding: 10px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #000000; /* Set border color to black */
+    /*background-color: #000000;*/ /* Set background color to black */
+    background-color: var(--colors-green);
+    color: #000000; /* Set text color to black */
+    font-family: "Inter", Helvetica;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+
+/* You can add hover effects for the button */
+#link-about:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+#speak-button{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7.08px;
+    padding: 10px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #000000; /* Set border color to black */
+    /*background-color: #000000;*/ /* Set background color to black */
+    background-color: var(--colors-green);
+    color: #000000; /* Set text color to black */
+    font-family: "Inter", Helvetica;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+
+/* You can add hover effects for the button */
+#speak-button:hover {
+  background-color: #ffffff;
+  color: #000000;
 }

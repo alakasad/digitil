@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="globals.css"/>
+    <link rel="stylesheet" href="styleguide.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class ="content">
+<div class="element-b">
+    <footer class="footer">
+        <img class="svg" src="img/svg.svg" />
+        <div class="controls">
+            
+        
+        <a href="main-page-tts-bw.html" id="bwLink">
+            <img class="image" src="img/image.png" alt="Button Image">
+        </a>
+        <script>
+            document.getElementById("bwLink").addEventListener("click", function(e)){
+                        e.preventDefault();
+            var content = document.querySelector(.content);
+            content.classList.toggle('grayscale');
+                                                               
+                                                               }
+            
+        </script>
+        
+        <a href="tts-page-tt.html" id="">
+            <img class="image" src="img/image-1.png" alt="Button Image">
+        </a>
+        
+        
+        </div>
+        
+        <a href="https://www.instagram.com/digi.til/" id="instagram-button" target="_blank" class="image-button">
+            <img src="img/button-instagram.svg" alt="Instagram" /> 
+          </a>
+          <a href="https://t.me/ilovedigitil" target="_blank" id="telegram-button"  class="image-button">
+              <img src="img/button-telegram.svg" alt="Telegram" /> 
+          </a>
+          <a href="https://www.facebook.com/ilovedigitil?mibextid=ZbWKwL" target="_blank" id="facebook-button"  class="image-button">
+              <img src="img/button-facebook.svg" alt="Facebook" /> 
+          </a>
+      </footer>
+    <div class="line"><img class="line-2" src="img/line-1.svg"/></div>
+
+
+    <div class="buttons">
+        <!--<a href="tts-page.html" id="link-tts" class="image-button">
+            <img src="Img/button-text-to-speech.svg" alt="Button">
+        </a>-->
+        <button id="link-tts" class="">TEXT TO SPEECH</button>
+        <script>
+            const linkTTS = document.getElementById('link-tts');
+            
+            function showMessage(){
+                alert('You already opened page.');
+            }
+            
+            linkTTS.addEventListener('click', showMessage);
+        </script>
+        <!--<a href="#" id="link-speech-to-text" class="image-button">
+            <img src="Img/button-speech-to-text.svg" alt="Button">
+        </a>-->
+        <button id="link-speech-to-text" class="">SPEECH TO TEXT</button>
+        <script>
+            const link = document.getElementById('link-speech-to-text');
+            
+            function showMessage(){
+                alert('This page is under development.');
+            }
+            
+            link.addEventListener('click', showMessage);
+        </script>
+        
+        <!--<a href="#" id="link-about" class="image-button">
+            <img src="Img/button-about.svg" alt="Button">
+        </a>-->
+        <button id="link-about" class="">ABOUT</button>
+        <script>
+            const linkAbout = document.getElementById('link-about');
+            
+            function showMessage(){
+                alert('This page is under development.');
+            }
+            
+            linkAbout.addEventListener('click', showMessage);
+        </script>
+    </div>
+
+    <div class="line-wrapper"><img class="line-3" src="img/line.svg"/></div>
+
+    <!-- <select id="voice-lang">
+        <option value="uz">UZ</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+    </select>
+    -->
+
+    <div>
+        <div class="main-page-TTS working-area">
+            <textarea id="text-to-speak" class="big-textbox"
+                      placeholder="Type/paste any text in uzbek.  
+For example: 'Assalomu aleykum, men o'zbek tilini va digitilni sevaman'"></textarea>
+        </div>
+    </div>
+    
+    <!-- PLAYER -->
+    <audio controls id="audio-player" style="display: none;">
+    </audio>
+    <!--<a href="tts-page.html" id="speak-button" class="image-button">
+        <img src="Img/buttons-convert-to-speech.svg" alt="Button">
+    </a>-->
+    <button id="speak-button" class="">CONVERT TO SPEECH</button>
+
+</div>
+    </div>
+    <script src="js/tts-player.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

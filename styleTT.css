@@ -1,0 +1,390 @@
+.element-b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px; /* Adjusted height */
+  gap: 75px; /* Increased gap */
+  padding: 75px 175px 0px; /* Adjusted padding */
+  position: relative;
+  background-color: var(--colors-green);
+}
+html, body{
+    background-color: var(--colors-green);
+}
+
+.element-b .footer {
+  display: flex;
+  width: 1125px;
+  align-items: center;
+  justify-content: center;
+  gap: 150px; 
+  position: relative;
+  flex: 0 0 auto;
+  background-color: transparent;
+}
+
+.element-b .controls {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.main-page-TTS.working-area .big-textbox {
+  display: flex;
+  width: 1125px;
+  height: 450px;
+  align-items: flex-start;
+  gap: 100px;
+  padding: 100px;
+  position: relative;
+  background-color: var(--colors-white);
+  border-radius: 50px;
+}
+
+
+.element-b .image {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  object-fit: cover;
+}
+
+.element-b .img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  object-fit: cover;
+}
+
+.element-b .frame {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-b .line {
+  display: flex;
+  width: 1125px;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-b .line-2 {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  height: 3.12px;
+  margin-top: -3.12px;
+}
+
+.element-b .buttons {
+  display: flex;
+  width: 1125px;
+  align-items: center;
+  justify-content: center;
+  gap: 112.5px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-b .button {
+  width: 293.75px;
+  background-color: var(--colors-white);
+  border-color: var(--colors-brown);
+  position: relative;
+  height: 50px;
+  margin-top: -3.12px;
+  margin-bottom: -3.12px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 3.12px solid;
+}
+
+.element-b .text-wrapper {
+  left: 25px;
+  color: var(--colors-brown);
+  position: absolute;
+  top: 6px;
+  font-family: "Inter", Helvetica;
+  font-weight: 900;
+  font-size: 24.8px;
+  text-align: center;
+  letter-spacing: 1.88px;
+  line-height: 18.8px;
+  white-space: nowrap;
+}
+
+.element-b .STT-wrapper {
+  width: 235px;
+  border-color: var(--colors-brown);
+  position: relative;
+  height: 50px;
+  margin-top: -3.12px;
+  margin-bottom: -3.12px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 3.12px solid;
+}
+
+.element-b .about-wrapper {
+  width: 235px;
+  border-color: var(--colors-brown);
+  position: relative;
+  height: 50px;
+  margin-top: -3.12px;
+  margin-bottom: -3.12px;
+  border-radius: 18.75px;
+  overflow: hidden;
+  border: 3.12px solid;
+}
+
+.element-b .about {
+  position: absolute;
+  top: 6px;
+  left: 56px;
+  font-family: "Inter", Helvetica;
+  font-weight: 900;
+  color: var(--colors-brown);
+  font-size: 18.8px;
+  text-align: center;
+  letter-spacing: 1.88px;
+  line-height: 18.8px;
+  white-space: nowrap;
+}
+
+.element-b .line-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-b .line-3 {
+  position: relative;
+  width: 718.75px;
+  height: 3.12px;
+  margin-top: -3.12px;
+}
+
+.element-b .working-area {
+    /*text box*/
+
+}
+
+.element-b .flexcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 760.62px;
+  height: 256.25px;
+  align-items: flex-start;
+  gap: 6.25px;
+}
+
+.element-b .text {
+  position: relative;
+  align-self: stretch;
+  filter: blur(1.88px);
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: var(--colors-brown);
+  font-size: 35px;
+  letter-spacing: -0.5px;
+  line-height: 33.5px;
+}
+
+.element-b .span {
+  color: #281e11;
+}
+
+.element-b .text-wrapper-2 {
+  color: #5b7950;
+}
+
+.element-b .button-wrapper {
+  display: flex;
+  width: 925px;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-b .TTS-wrapper {
+  width: 306.25px;
+  border-color: var(--colors-gray);
+  position: relative;
+  height: 37.5px;
+  margin-top: -3.12px;
+  margin-bottom: -3.12px;
+  border-radius: 18.75px;
+  overflow: hidden;
+  border: 3.12px solid;
+}
+
+.element-b .TTS {
+  left: 32px;
+  color: var(--colors-gray);
+  position: absolute;
+  top: 6px;
+  font-family: "Inter", Helvetica;
+  font-weight: 900;
+  font-size: 18.8px;
+  text-align: center;
+  letter-spacing: 1.88px;
+  line-height: 18.8px;
+  white-space: nowrap;
+}
+.image-button {
+    margin-right: 1px; /* Adjust the margin as needed */
+    margin-left: 1px;
+}
+.image-button:last-child {
+    margin-right: 0;
+}
+/* Initially grayscale the images */
+.image-button img {
+    filter: grayscale(100%);
+    transition: filter 0.3s; /* Smooth transition effect */
+}
+
+/* Remove grayscale on hover */
+.image-button:hover img {
+    filter: none;
+}
+
+.big-textbox::placeholder {
+    font-size: 30px; 
+}
+.big-textbox {
+    height: 200px;
+    font-size: 30px;
+}
+#play {
+
+}
+
+#link-tts {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7.08px;
+    padding: 10px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #000000; /* Set border color to black */
+    /*background-color: #000000;*/ /* Set background color to black */
+    background-color: white;
+    color: #000000; /* Set text color to black */
+    font-family: "Inter", Helvetica;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+
+/* You can add hover effects for the button */
+#link-tts:hover {
+  /*background-color: #ffffff;*/
+  background-color: var(--colors-green);
+
+}
+#link-speech-to-text{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7.08px;
+    padding: 10px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #000000; /* Set border color to black */
+    /*background-color: #000000;*/ /* Set background color to black */
+    background-color: var(--colors-green);
+    color: #000000; /* Set text color to black */
+    font-family: "Inter", Helvetica;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+
+/* You can add hover effects for the button */
+#link-speech-to-text:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+#link-about{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7.08px;
+    padding: 10px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #000000; /* Set border color to black */
+    /*background-color: #000000;*/ /* Set background color to black */
+    background-color: var(--colors-green);
+    color: #000000; /* Set text color to black */
+    font-family: "Inter", Helvetica;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+
+/* You can add hover effects for the button */
+#link-about:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+#speak-button{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7.08px;
+    padding: 10px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #000000; /* Set border color to black */
+    /*background-color: #000000;*/ /* Set background color to black */
+    background-color: var(--colors-green);
+    color: #000000; /* Set text color to black */
+    font-family: "Inter", Helvetica;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+
+/* You can add hover effects for the button */
+#speak-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
