@@ -1,24 +1,17 @@
-.element-b {
+html, body{
+    background-color: var(--colors-green);
+    font-size: 80px;
+}
+
+.content {
   display: flex;
   flex-direction: column;
-  height: 800px;
   align-items: center;
   gap: 50px;
-  padding: 50px 125px 0px;
-  position: relative;
-   /* Apply grayscale to the entire element-b section */
+  margin-top: 50px;
 }
 
-html, body {
-  background-color: black;
-  color: white; /* This changes the text color to ensure visibility on the dark background */
-}
-
-.element-b * {
-  filter: grayscale(100%);
-}
-
-.element-b .footer {
+.content .footer {
   display: flex;
   width: 925px;
   align-items: center;
@@ -28,8 +21,7 @@ html, body {
   flex: 0 0 auto;
   background-color: transparent;
 }
-
-.element-b .controls {
+.content .controls {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -37,40 +29,44 @@ html, body {
   position: relative;
   flex: 0 0 auto;
 }
+.social-media{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media a{
+    margin-right: 40px;
+}
 
 .main-page-TTS.working-area .big-textbox {
-  display: flex;
   width: 925px;
   height: 337.5px;
-  align-items: flex-start;
+  padding: 62.5px; 
   gap: 62.5px;
-  padding: 62.5px;
-  position: relative;
-  background-color: var(--colors-white);
   border-radius: 50px;
+  backface-visibility: var(--white,#FFF);
 }
 
-
-.element-b .image {
-  width: 38px;
-  height: 38px;
+.content .image {
+  width: 50x;
+  height: 50px;
   position: relative;
   object-fit: cover;
 }
 
-.element-b .img {
-  width: 35px;
-  height: 32px;
+.content .img {
+  width: 50px;
+  height: 50px;
   position: relative;
   object-fit: cover;
 }
 
-.element-b .frame {
+.content .frame {
   position: relative;
   flex: 0 0 auto;
 }
 
-.element-b .line {
+.content .line {
   display: flex;
   width: 925px;
   align-items: center;
@@ -80,7 +76,7 @@ html, body {
   flex: 0 0 auto;
 }
 
-.element-b .line-2 {
+.content.line-2 {
   position: relative;
   flex: 1;
   flex-grow: 1;
@@ -88,7 +84,7 @@ html, body {
   margin-top: -3.12px;
 }
 
-.element-b .buttons {
+.content .buttons {
   display: flex;
   width: 925px;
   align-items: center;
@@ -98,7 +94,7 @@ html, body {
   flex: 0 0 auto;
 }
 
-.element-b .button {
+.content .button {
   width: 231.25px;
   background-color: var(--colors-white);
   border-color: var(--colors-brown);
@@ -179,11 +175,6 @@ html, body {
   margin-top: -3.12px;
 }
 
-.element-b .working-area {
-    /*text box*/
-
-}
-
 .element-b .flexcontainer {
   display: flex;
   flex-direction: column;
@@ -249,7 +240,7 @@ html, body {
   white-space: nowrap;
 }
 .image-button {
-    margin-right: 1px; /* Adjust the margin as needed */
+    margin-right: 1px; 
     margin-left: 1px;
 }
 .image-button:last-child {
@@ -266,24 +257,12 @@ html, body {
     filter: none;
 }
 
-.image-button img {
-  filter: grayscale(100%);
-  transition: filter 0.3s; /* Smooth transition effect */
-}
-
-/* Remove grayscale on hover */
-.image-button:hover img {
-  filter: none;
-}
 .big-textbox::placeholder {
-    font-size: 20px; 
+    font-size: 30px; 
 }
 .big-textbox {
     height: 200px;
-    font-size: 20px;
-}
-#play {
-
+    font-size: 30px;
 }
 #link-tts {
     display: inline-flex;
@@ -295,50 +274,45 @@ html, body {
     flex: 0 0 auto;
     border-radius: 15px;
     overflow: hidden;
-    border: 3px solid;
-    border-color: #ffffff;
-    background-color: white;
+    border: 3px solid #000000; 
+    /*background-color: white;*/
+    background-color: var(--colors-green);
     color: #000000; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 25px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
 }
-
-
-/* You can add hover effects for the button */
+/* Hover effects for the button */
 #link-tts:hover {
-  background-color: black;
-  color: white;
+  background-color: #ffffff;
+  color: #000000;
 }
 #link-speech-to-text{
     display: inline-flex;
     align-items: flex-start;
     justify-content: center;
     gap: 7.08px;
-    padding: 10px 20px; /* Increase padding for more space around the text */
+    padding: 10px 20px;
     position: relative;
     flex: 0 0 auto;
     border-radius: 15px;
     overflow: hidden;
-    border: 3px solid;
-    border-color: #ffffff;
-    background-color: transparent;
-    color: #ffffff;
+    border: 3px solid #000000; /* Set border color to black */
+    /*background-color: #000000;*/ /* Set background color to black */
+    background-color: var(--colors-green);
+    color: #000000; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 16px; /* Increase font size for larger text */
+    font-size: 25px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
 }
-
-
-/* You can add hover effects for the button */
 #link-speech-to-text:hover {
   background-color: #ffffff;
   color: #000000;
@@ -348,24 +322,23 @@ html, body {
     align-items: flex-start;
     justify-content: center;
     gap: 7.08px;
-    padding: 10px 20px; /* Increase padding for more space around the text */
+    padding: 10px 20px;
     position: relative;
     flex: 0 0 auto;
     border-radius: 15px;
     overflow: hidden;
-    border: 3px solid;
-    border-color: #ffffff;
-    background-color: transparent;
-    color: #ffffff;
+    border: 3px solid #000000; /* Set border color to black */
+    /*background-color: #000000;*/ /* Set background color to black */
+    background-color: var(--colors-green);
+    color: #000000; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 16px; /* Increase font size for larger text */
+    font-size: 25px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
 }
-
 
 /* You can add hover effects for the button */
 #link-about:hover {
@@ -377,27 +350,80 @@ html, body {
     align-items: flex-start;
     justify-content: center;
     gap: 7.08px;
-    padding: 10px 20px; /* Increase padding for more space around the text */
+    padding: 10px 20px;
     position: relative;
     flex: 0 0 auto;
     border-radius: 15px;
     overflow: hidden;
-    border: 3px solid;
-    border-color: #ffffff;
-    background-color: transparent;
-    color: #ffffff;
+    border: 3px solid #000000; /* Set border color to black */
+    /*background-color: #000000;*/ /* Set background color to black */
+    background-color: var(--colors-green);
+    color: #000000; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 16px; /* Increase font size for larger text */
+    font-size: 25px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
 }
 
-
-/* You can add hover effects for the button */
 #speak-button:hover {
   background-color: #ffffff;
   color: #000000;
+}
+#con {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 15vh;
+      margin: 0;
+}
+
+#audio-player {
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.bwLink{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.bwLink img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.bwLink:hover img {
+    transform: scale(0.8); 
+}
+/*.bwLink:hover{
+    background-color: white;
+}*/
+.ttLink{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.ttLink img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.ttLink:hover img {
+    transform: scale(0.8); 
+}
+.image-button{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.image-button img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.image-button:hover img {
+    transform: scale(0.8); 
 }

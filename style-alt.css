@@ -1,30 +1,78 @@
-.element-b {
+.content * {
+  filter: grayscale(100%);
+}
+
+html, body{
+  background-color: black;
+  color: white;
+}
+
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1000px; /* Adjusted height */
-  gap: 75px; /* Increased gap */
-  padding: 75px 175px 0px; /* Adjusted padding */
-  position: relative;
-  background-color: var(--colors-green);
-}
-html, body{
-    background-color: var(--colors-green);
+  gap: 50px;
+  margin-top: 50px;
 }
 
-.element-b .footer {
+.content .footer {
   display: flex;
-  width: 1125px;
+  width: 925px;
   align-items: center;
   justify-content: center;
-  gap: 150px; 
+  gap: 100px;
   position: relative;
   flex: 0 0 auto;
   background-color: transparent;
 }
-
-.element-b .controls {
+.content .controls {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  position: relative;
+  flex: 0 0 auto;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media a{
+    margin-right: 40px;
+}
+
+.main-page-TTS.working-area .big-textbox {
+  width: 925px;
+  height: 337.5px;
+  padding: 62.5px; 
+  gap: 62.5px;
+  border-radius: 50px;
+  backface-visibility: var(--white,#FFF);
+}
+
+.content .image {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  object-fit: cover;
+}
+
+.content .img {
+  width: 35px;
+  height: 32px;
+  position: relative;
+  object-fit: cover;
+}
+
+.content .frame {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.content .line {
+  display: flex;
+  width: 925px;
   align-items: center;
   justify-content: center;
   gap: 50px;
@@ -32,49 +80,7 @@ html, body{
   flex: 0 0 auto;
 }
 
-.main-page-TTS.working-area .big-textbox {
-  display: flex;
-  width: 1125px;
-  height: 450px;
-  align-items: flex-start;
-  gap: 100px;
-  padding: 100px;
-  position: relative;
-  background-color: var(--colors-white);
-  border-radius: 50px;
-}
-
-
-.element-b .image {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  object-fit: cover;
-}
-
-.element-b .img {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  object-fit: cover;
-}
-
-.element-b .frame {
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-b .line {
-  display: flex;
-  width: 1125px;
-  align-items: center;
-  justify-content: center;
-  gap: 75px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-b .line-2 {
+.content.line-2 {
   position: relative;
   flex: 1;
   flex-grow: 1;
@@ -82,37 +88,37 @@ html, body{
   margin-top: -3.12px;
 }
 
-.element-b .buttons {
+.content .buttons {
   display: flex;
-  width: 1125px;
+  width: 925px;
   align-items: center;
   justify-content: center;
-  gap: 112.5px;
+  gap: 75px;
   position: relative;
   flex: 0 0 auto;
 }
 
-.element-b .button {
-  width: 293.75px;
+.content .button {
+  width: 231.25px;
   background-color: var(--colors-white);
   border-color: var(--colors-brown);
   position: relative;
-  height: 50px;
+  height: 37.5px;
   margin-top: -3.12px;
   margin-bottom: -3.12px;
-  border-radius: 25px;
+  border-radius: 18.75px;
   overflow: hidden;
   border: 3.12px solid;
 }
 
 .element-b .text-wrapper {
-  left: 25px;
+  left: 19px;
   color: var(--colors-brown);
   position: absolute;
   top: 6px;
   font-family: "Inter", Helvetica;
   font-weight: 900;
-  font-size: 24.8px;
+  font-size: 18.8px;
   text-align: center;
   letter-spacing: 1.88px;
   line-height: 18.8px;
@@ -120,22 +126,22 @@ html, body{
 }
 
 .element-b .STT-wrapper {
-  width: 235px;
+  width: 231.25px;
   border-color: var(--colors-brown);
   position: relative;
-  height: 50px;
+  height: 37.5px;
   margin-top: -3.12px;
   margin-bottom: -3.12px;
-  border-radius: 25px;
+  border-radius: 18.75px;
   overflow: hidden;
   border: 3.12px solid;
 }
 
 .element-b .about-wrapper {
-  width: 235px;
+  width: 193.75px;
   border-color: var(--colors-brown);
   position: relative;
-  height: 50px;
+  height: 37.5px;
   margin-top: -3.12px;
   margin-bottom: -3.12px;
   border-radius: 18.75px;
@@ -173,11 +179,6 @@ html, body{
   margin-top: -3.12px;
 }
 
-.element-b .working-area {
-    /*text box*/
-
-}
-
 .element-b .flexcontainer {
   display: flex;
   flex-direction: column;
@@ -194,9 +195,9 @@ html, body{
   font-family: "Inter", Helvetica;
   font-weight: 700;
   color: var(--colors-brown);
-  font-size: 35px;
+  font-size: 25px;
   letter-spacing: -0.5px;
-  line-height: 33.5px;
+  line-height: 27.5px;
 }
 
 .element-b .span {
@@ -243,7 +244,7 @@ html, body{
   white-space: nowrap;
 }
 .image-button {
-    margin-right: 1px; /* Adjust the margin as needed */
+    margin-right: 1px; 
     margin-left: 1px;
 }
 .image-button:last-child {
@@ -261,16 +262,12 @@ html, body{
 }
 
 .big-textbox::placeholder {
-    font-size: 30px; 
+    font-size: 20px; 
 }
 .big-textbox {
     height: 200px;
-    font-size: 30px;
+    font-size: 20px;
 }
-#play {
-
-}
-
 #link-tts {
     display: inline-flex;
     align-items: flex-start;
@@ -281,25 +278,22 @@ html, body{
     flex: 0 0 auto;
     border-radius: 15px;
     overflow: hidden;
-    border: 3px solid #000000; /* Set border color to black */
-    /*background-color: #000000;*/ /* Set background color to black */
-    background-color: white;
+    border: 3px solid #000000; 
+    /*background-color: white;*/
+    background-color: var(--colors-green);
     color: #000000; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
 }
-
-
-/* You can add hover effects for the button */
+/* Hover effects for the button */
 #link-tts:hover {
-  /*background-color: #ffffff;*/
-  background-color: var(--colors-green);
-
+  background-color: #ffffff;
+  color: #000000;
 }
 #link-speech-to-text{
     display: inline-flex;
@@ -317,15 +311,12 @@ html, body{
     color: #000000; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
 }
-
-
-/* You can add hover effects for the button */
 #link-speech-to-text:hover {
   background-color: #ffffff;
   color: #000000;
@@ -346,13 +337,12 @@ html, body{
     color: #000000; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
 }
-
 
 /* You can add hover effects for the button */
 #link-about:hover {
@@ -375,16 +365,69 @@ html, body{
     color: #000000; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
 }
 
-
-/* You can add hover effects for the button */
 #speak-button:hover {
   background-color: #ffffff;
   color: #000000;
+}
+#con {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 15vh;
+      margin: 0;
+}
+
+#audio-player {
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.bwLink{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.bwLink img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.bwLink:hover img {
+    transform: scale(0.8); 
+}
+.ttLink{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.ttLink img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+/*.ttLink:hover{
+    background-color: white;
+}*/
+.ttLink:hover img {
+    transform: scale(0.8); 
+}
+.image-button{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.image-button img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.image-button:hover img {
+    transform: scale(0.8); 
 }
