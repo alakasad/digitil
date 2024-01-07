@@ -77,10 +77,22 @@ For example: 'Assalomu aleykum, men o'zbek tilini va digitilni sevaman'"></texta
       <!-- PLAYER -->
       <div id="con">
          <audio controls id="audio-player">
-            <source src="" type="">
+             <!--<source src="" type="">-->
          </audio>
       </div>
-      <script src="js/tts-player.js"></script>
-      <script src="script.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var showButton = document.getElementById('speak-button');
+            var audioPlayer = document.getElementById('audio-player');
+            showButton.addEventListener('click', function () {
+                if (audioPlayer.style.display === 'none') {
+                    audioPlayer.style.display = 'block';
+                } else {
+                    audioPlayer.style.display = 'none';
+                }
+            });
+        });
+      </script>
+      <script src=""></script> <!--Script to make TTS-->>
    </body>
 </html>
