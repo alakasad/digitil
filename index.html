@@ -3,7 +3,8 @@
    <head>
       <link rel="stylesheet" href="globals.css"/>
       <link rel="stylesheet" href="styleguide.css"/>
-      <link rel="stylesheet" href="style.css"/>
+       
+      <link id="styleLink" rel="stylesheet" href="style.css"/>
    </head>
    <body>
       <div class="content">
@@ -80,19 +81,35 @@ For example: 'Assalomu aleykum, men o'zbek tilini va digitilni sevaman'"></texta
              <!--<source src="" type="">-->
          </audio>
       </div>
-      <script>
+      <!--<div class = "downloadButtons">
+      <button id="downloadWavButton">Download as WAV</button>
+      <button id="downloadMp3Button">Download as MP3</button>
+      </div>-->
+       <script>
         document.addEventListener('DOMContentLoaded', function () {
             var showButton = document.getElementById('speak-button');
             var audioPlayer = document.getElementById('audio-player');
+            var wavButton = document.getElementById('downloadWavButton');
+            var mp3Button = document.getElementById('downloadMp3Button');
+            
             showButton.addEventListener('click', function () {
-                if (audioPlayer.style.display === 'none') {
+                if (audioPlayer.style.display == 'none') {
                     audioPlayer.style.display = 'block';
                 } else {
                     audioPlayer.style.display = 'none';
                 }
             });
         });
+
       </script>
-      <script src=""></script> <!--Script to make TTS-->>
+      <script src="js/tts.js"></script> <!--Script to make TTS-->
+      <div class="contentFoot">
+       <img class="imgLine" src="img/line-1-upd.svg"/>
+      </div> 
+       
+       <div class="div-3">
+          <div class="text-2"><div class="TTS-3">2024 © DIGITIL</div></div>
+       </div>
+       
    </body>
 </html>

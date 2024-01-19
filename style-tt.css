@@ -10,7 +10,12 @@ html, body{
   gap: 50px;
   margin-top: 50px;
 }
-
+.contentFoot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
 .content .footer {
   display: flex;
   width: 925px;
@@ -33,39 +38,35 @@ html, body{
     display: flex;
     justify-content: space-between;
 }
-
 .social-media a{
     margin-right: 40px;
 }
-
 .main-page-TTS.working-area .big-textbox {
+  display: flex; 
   width: 925px;
-  height: 337.5px;
+  height: 260px;
   padding: 62.5px; 
+  align-items: flex-start;
   gap: 62.5px;
   border-radius: 50px;
   backface-visibility: var(--white,#FFF);
 }
-
 .content .image {
-  width: 50x;
-  height: 50px;
+  width: 38px;
+  height: 38px;
   position: relative;
   object-fit: cover;
 }
-
 .content .img {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 32px;
   position: relative;
   object-fit: cover;
 }
-
 .content .frame {
   position: relative;
   flex: 0 0 auto;
 }
-
 .content .line {
   display: flex;
   width: 925px;
@@ -75,7 +76,6 @@ html, body{
   position: relative;
   flex: 0 0 auto;
 }
-
 .content.line-2 {
   position: relative;
   flex: 1;
@@ -83,7 +83,6 @@ html, body{
   height: 3.12px;
   margin-top: -3.12px;
 }
-
 .content .buttons {
   display: flex;
   width: 925px;
@@ -93,7 +92,6 @@ html, body{
   position: relative;
   flex: 0 0 auto;
 }
-
 .content .button {
   width: 231.25px;
   background-color: var(--colors-white);
@@ -106,139 +104,6 @@ html, body{
   overflow: hidden;
   border: 3.12px solid;
 }
-
-.element-b .text-wrapper {
-  left: 19px;
-  color: var(--colors-brown);
-  position: absolute;
-  top: 6px;
-  font-family: "Inter", Helvetica;
-  font-weight: 900;
-  font-size: 18.8px;
-  text-align: center;
-  letter-spacing: 1.88px;
-  line-height: 18.8px;
-  white-space: nowrap;
-}
-
-.element-b .STT-wrapper {
-  width: 231.25px;
-  border-color: var(--colors-brown);
-  position: relative;
-  height: 37.5px;
-  margin-top: -3.12px;
-  margin-bottom: -3.12px;
-  border-radius: 18.75px;
-  overflow: hidden;
-  border: 3.12px solid;
-}
-
-.element-b .about-wrapper {
-  width: 193.75px;
-  border-color: var(--colors-brown);
-  position: relative;
-  height: 37.5px;
-  margin-top: -3.12px;
-  margin-bottom: -3.12px;
-  border-radius: 18.75px;
-  overflow: hidden;
-  border: 3.12px solid;
-}
-
-.element-b .about {
-  position: absolute;
-  top: 6px;
-  left: 56px;
-  font-family: "Inter", Helvetica;
-  font-weight: 900;
-  color: var(--colors-brown);
-  font-size: 18.8px;
-  text-align: center;
-  letter-spacing: 1.88px;
-  line-height: 18.8px;
-  white-space: nowrap;
-}
-
-.element-b .line-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-b .line-3 {
-  position: relative;
-  width: 718.75px;
-  height: 3.12px;
-  margin-top: -3.12px;
-}
-
-.element-b .flexcontainer {
-  display: flex;
-  flex-direction: column;
-  width: 760.62px;
-  height: 256.25px;
-  align-items: flex-start;
-  gap: 6.25px;
-}
-
-.element-b .text {
-  position: relative;
-  align-self: stretch;
-  filter: blur(1.88px);
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: var(--colors-brown);
-  font-size: 25px;
-  letter-spacing: -0.5px;
-  line-height: 27.5px;
-}
-
-.element-b .span {
-  color: #281e11;
-}
-
-.element-b .text-wrapper-2 {
-  color: #5b7950;
-}
-
-.element-b .button-wrapper {
-  display: flex;
-  width: 925px;
-  align-items: center;
-  justify-content: center;
-  gap: 75px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.element-b .TTS-wrapper {
-  width: 306.25px;
-  border-color: var(--colors-gray);
-  position: relative;
-  height: 37.5px;
-  margin-top: -3.12px;
-  margin-bottom: -3.12px;
-  border-radius: 18.75px;
-  overflow: hidden;
-  border: 3.12px solid;
-}
-
-.element-b .TTS {
-  left: 32px;
-  color: var(--colors-gray);
-  position: absolute;
-  top: 6px;
-  font-family: "Inter", Helvetica;
-  font-weight: 900;
-  font-size: 18.8px;
-  text-align: center;
-  letter-spacing: 1.88px;
-  line-height: 18.8px;
-  white-space: nowrap;
-}
 .image-button {
     margin-right: 1px; 
     margin-left: 1px;
@@ -246,33 +111,31 @@ html, body{
 .image-button:last-child {
     margin-right: 0;
 }
-/* Initially grayscale the images */
 .image-button img {
     filter: grayscale(100%);
-    transition: filter 0.3s; /* Smooth transition effect */
+    transition: filter 0.3s;
 }
-
-/* Remove grayscale on hover */
 .image-button:hover img {
-    filter: none;
+    filter: nongape;
 }
-
 .big-textbox::placeholder {
-    font-size: 30px; 
+    font-size: 25px; 
 }
 .big-textbox {
     height: 200px;
-    font-size: 30px;
+    font-size: 25px;
 }
 #link-tts {
+    width: 225px;
+    height: 35px;
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 7.08px;
     padding: 10px 20px;
     position: relative;
     flex: 0 0 auto;
-    border-radius: 15px;
+    border-radius: 18.8px;
     overflow: hidden;
     border: 3px solid #000000; 
     /*background-color: white;*/
@@ -280,26 +143,27 @@ html, body{
     color: #000000; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
 }
-/* Hover effects for the button */
 #link-tts:hover {
   background-color: #ffffff;
   color: #000000;
 }
 #link-speech-to-text{
+    width: 225px;
+    height: 35px;
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 7.08px;
     padding: 10px 20px;
     position: relative;
     flex: 0 0 auto;
-    border-radius: 15px;
+    border-radius: 18.8px;
     overflow: hidden;
     border: 3px solid #000000; /* Set border color to black */
     /*background-color: #000000;*/ /* Set background color to black */
@@ -307,7 +171,7 @@ html, body{
     color: #000000; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
@@ -318,14 +182,16 @@ html, body{
   color: #000000;
 }
 #link-about{
+    width: 225px;
+    height: 35px;
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 7.08px;
     padding: 10px 20px;
     position: relative;
     flex: 0 0 auto;
-    border-radius: 15px;
+    border-radius: 18.8px;
     overflow: hidden;
     border: 3px solid #000000; /* Set border color to black */
     /*background-color: #000000;*/ /* Set background color to black */
@@ -333,41 +199,40 @@ html, body{
     color: #000000; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
 }
-
-/* You can add hover effects for the button */
 #link-about:hover {
   background-color: #ffffff;
   color: #000000;
 }
 #speak-button{
+    width: 300px;
+    height: 35px;
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 7.08px;
-    padding: 10px 20px;
+    padding: 8.427px 32.461px 8.814px 33.158px;
     position: relative;
     flex: 0 0 auto;
-    border-radius: 15px;
+    border-radius: 18.8px;
     overflow: hidden;
-    border: 3px solid #000000; /* Set border color to black */
+    border: 3px solid #9F9F9F; /* Set border color to black */
     /*background-color: #000000;*/ /* Set background color to black */
     background-color: var(--colors-green);
-    color: #000000; /* Set text color to black */
+    color: #9F9F9F; /* Set text color to black */
     font-family: "Inter", Helvetica;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
 }
-
 #speak-button:hover {
   background-color: #ffffff;
   color: #000000;
@@ -379,12 +244,36 @@ html, body{
       height: 15vh;
       margin: 0;
 }
-
 #audio-player {
-    width: 600px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 569px;
+    height: 63px;
+    padding: 7px 18.41px 5.974px 20px;
+    display: none; /*Default invisible*/
+    background-color: var(--colors-green);
+    color: black;
+    border-radius: 37px;
+    border: 3px solid var(--black, #000);
+    opacity: 1;
 }
-
+#audio-player::-webkit-media-controls-panel {
+    background-color: var(--colors-green);
+    border-radius: 18.8px;
+}
+#audio-player::-webkit-media-controls-play-button {
+    color: black;
+    opacity: 1;
+}
+#audio-player::-webkit-media-controls-mute-button,
+#audio-player::-webkit-media-controls-volume-slider-container {
+    color: black; 
+    opacity: 1;  
+}
+#audio-player::-webkit-media-controls-mute-button {
+    background-color: transparent;
+}
+#audio-player::-webkit-media-controls-volume-slider {
+    background-color: #333; 
+}
 .bwLink{
     display: inline-block;
     overflow: hidden;
@@ -398,9 +287,6 @@ html, body{
 .bwLink:hover img {
     transform: scale(0.8); 
 }
-/*.bwLink:hover{
-    background-color: white;
-}*/
 .ttLink{
     display: inline-block;
     overflow: hidden;
@@ -426,4 +312,85 @@ html, body{
 }
 .image-button:hover img {
     transform: scale(0.8); 
+}
+/*.downloadButtons{
+    display: none;
+    width: 925.48px;
+    align-items: center;
+    justify-content: center;
+    gap: 18.76px;
+    position: relative; 
+    flex: 0 0 auto;
+}
+#downloadWavButton, #downloadMp3Button{
+    display: none;  
+    width: 225px;
+    height: 31.25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7.08px;
+    padding: 10px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 18.8px;
+    overflow: hidden;
+    border: 3px solid #000000; 
+    background-color: var(--colors-green);
+    color: #000000; 
+    font-family: "Inter", Helvetica;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 14px;
+    cursor: pointer;
+}*/
+/*FOOTER*/
+.div-1 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.div-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+.text-2 {
+  width: 200px;
+  height: 20px;
+  position: relative;
+  border-radius: 18.75px;
+  overflow: hidden;
+}
+.TTS-2 {
+  font-family: "Inter-Black", Helvetica;
+  font-weight: 900;
+  font-size: 18.8px;
+  letter-spacing: 1.88px;
+  line-height: 18.8px;
+  white-space: nowrap;
+  position: absolute;
+  width: 190px;
+  top: 0;
+  left: 5px;
+  color: var(--colors-brown);
+  text-align: center;
+}
+.TTS-3 {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  line-height: 12px;
+  position: absolute;
+  width: 190px;
+  top: 0;
+  left: 5px;
+  color: var(--colors-brown);
+  text-align: center;
 }
