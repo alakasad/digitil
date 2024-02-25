@@ -322,6 +322,8 @@ html, body{
 .image-button:hover img {
     transform: scale(0.8); 
 }
+
+
 .block-DOWNLOAD {
   display: flex;
   flex-direction: column;

@@ -15,9 +15,20 @@
                   <!-- changing Black and White, write it differently--> 
                   <img class="image" src="img/image-W.svg" alt="">
                </a>
-               <a href="tts-page-tt.html" class="ttLink">
+               <a href="" class="ttLink" id="myLink">
                   <img class="image" src="img/imageT-W.svg" alt=""> <!--changing Style, write it differently-->
                </a>
+            
+            <script>
+            var myLink = document.getElementById('myLink');
+
+    
+            myLink.addEventListener('click', function() {
+                alert('Sorry, under development!');
+            });
+            </script>
+                
+                
             </div>
             <!-- Social Media Links-->
             <div class ="social-media">
@@ -75,33 +86,41 @@ For example: 'Assalomu aleykum, men o'zbek tilini va digitilni sevaman'"></texta
          <button id="speak-button" class="">CONVERT TO SPEECH</button>
       </div>
       <!-- PLAYER -->
-      <div id="con">
-         <audio controls id="audio-player">
-             <!--<source src="" type="">-->
+      <div id="con2">
+         <audio controls id="audio-player2">
          </audio>
       </div>
-      <!--<div class = "downloadButtons">
-      <button id="downloadWavButton">Download as WAV</button>
-      <button id="downloadMp3Button">Download as MP3</button>
-      </div>-->
+       
+       <div class="block-DOWNLOAD">
+       <div class="text"><div class="TTS">DOWNLOAD</div></div>
+       <div class = "downloadButtons">
+       <button id="downloadWavButton">WAV</button>
+       <button id="downloadMp3Button">MP3</button>
+       </div>
+       </div>
+       
        <script>
-        document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
             var showButton = document.getElementById('speak-button');
-            var audioPlayer = document.getElementById('audio-player');
-            var wavButton = document.getElementById('downloadWavButton');
-            var mp3Button = document.getElementById('downloadMp3Button');
+            var audioPlayer = document.getElementById('audio-player2');
+            var downloadText = document.querySelector('.TTS');
+            var downloadButtons = document.querySelector('.downloadButtons');
             
-            showButton.addEventListener('click', function () {
-                if (audioPlayer.style.display == 'none') {
-                    audioPlayer.style.display = 'block';
-                } else {
-                    audioPlayer.style.display = 'none';
-                }
-            });
-        });
 
-      </script>
-      <script src="js/tts.js"></script> <!--Script to make TTS-->
+        showButton.addEventListener('click', function () {
+            audioPlayer.style.opacity = '1'; 
+            downloadText.style.opacity = '1'; 
+            downloadButtons.style.opacity = '1'; 
+        });
+        
+        
+    });
+
+    </script>
+
+      <script src="js/tts2.js"></script> <!--Script to make TTS-->
+       
+       
       <div class="contentFoot">
        <img class="imgLine" src="img/line-1-W.svg"/>
       </div> 
