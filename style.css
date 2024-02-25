@@ -253,13 +253,17 @@ html, body{
     width: 569px;
     height: 63px;
     padding: 7px 18.41px 5.974px 20px;
-    display: none; /*Default invisible*/
+/*    display: none; Default invisible*/
     background-color: var(--colors-green);
     color: black;
     border-radius: 37px;
     border: 3px solid var(--black, #000);
-    opacity: 1;
+    opacity: 0.5;
 }
+#audio-player.show {
+    opacity: 1; /* Fully visible when the 'show' class is applied */
+}
+
 #audio-player::-webkit-media-controls-panel {
     background-color: var(--colors-green);
     border-radius: 18.8px;
@@ -318,24 +322,51 @@ html, body{
 .image-button:hover img {
     transform: scale(0.8); 
 }
-/*.downloadButtons{
-    display: none;
+.block-DOWNLOAD {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.block-DOWNLOAD .text {
+  position: relative;
+  width: 300px;
+  height: 20px;
+  border-radius: 18.75px;
+  overflow: hidden;
+  
+}
+
+.block-DOWNLOAD .TTS {
+  position: absolute;
+  width: 128px;
+  top: 1px;
+  left: 86px;
+  font-family: "Inter-Black", Helvetica;
+  font-weight: 900;
+  color: var(--colors-brown);
+  font-size: 18.8px;
+  text-align: center;
+  letter-spacing: 1.88px;
+  line-height: 18.8px;
+  opacity: 0.5;
+}
+.downloadButtons{
+    display: flex;
     width: 925.48px;
     align-items: center;
     justify-content: center;
     gap: 18.76px;
-    position: relative; 
-    flex: 0 0 auto;
+    position: relative;
+    opacity: 0.5;
 }
 #downloadWavButton, #downloadMp3Button{
-    display: none;  
-    width: 225px;
-    height: 31.25px;
+    width: 106.25px;
+    height: 37.25px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 7.08px;
-    padding: 10px 20px;
     position: relative;
     flex: 0 0 auto;
     border-radius: 18.8px;
@@ -350,7 +381,15 @@ html, body{
     letter-spacing: 1.4px;
     line-height: 14px;
     cursor: pointer;
-}*/
+}
+#downloadWavButton:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+#downloadMp3Button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
 /*FOOTER*/
 .div-1 {
   display: inline-flex;
